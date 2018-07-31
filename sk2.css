@@ -1,0 +1,113 @@
+*{
+box-sizing:border-box;
+}html {
+  display:table;
+  width:100%;
+  height:100%;
+  background:#000;
+}
+body {
+  display:table-cell;
+  vertical-align:middle;
+}
+body:before {
+  content:'tilt';
+    font-size: 150px;
+    font-family: Brush Script Std;
+    letter-spacing: 15px;
+        text-align:left;
+    display:block;
+  height:200px;
+  width:200px;
+  border-radius:100%;
+  background :#ddd;
+  margin:auto;
+  box-shadow:0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+  transition:1s;
+  position:absolute;
+  top:auto;
+  left:50%;
+  margin-left:-100px;
+  margin-top:-100px;
+}
+body:hover:before {
+box-shadow:0 0 50px tomato,0 0 30px orange, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+  background:#aaa;
+  transition:1s;
+    transform: rotate(360deg);
+    font-size: 170px;
+    color:gold;
+}
+html , body {
+background:#159;
+text-align:center;
+background-image:
+linear-gradient(-40deg,#222,transparent,#111), 
+linear-gradient(40deg,#222,transparent,#111), 
+linear-gradient(-40deg,#222,transparent,#111),
+linear-gradient(40deg,#222,transparent,#111)
+;
+  background-size:300%;
+  background-position:center;
+  transition:1s;
+}
+html:hover,body:hover {background-color:#123;transition:1s;}
+/*body{
+    background-image: url(back.jpg);
+
+    /* Full height 
+    height: 100%; 
+    width: 100%;*/
+
+    /* Center and scale the image nicely 
+    background-position: center;
+    background-repeat: repeat;
+    background-size:contain;
+}*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   padding: 0px 4px;
+}
+.column{
+    display: flex;
+    flex: 25%;    
+    background: inherit;
+    border-right: 1px solid  rgb(127,127,127);
+    height: 100%;
+justify-content: center;
+}    
+.row a{
+    text-decoration: none;
+     color: white;
+    padding: 14px 20px;
+    height:100%;
+	padding:0px 20px;
+	
+      
+}
+.row a:hover{
+     box-shadow:0 0 50px gold,0 0 150px gold, inset 0 20px 20px 40px whitesmoke, inset 30px 0 35px 50px ivory;
+    color: black;
+	width:100%;
+   border-radius: 50%;
+  
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+        height: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        height: 25%;
+    }
+}
