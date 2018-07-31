@@ -2,7 +2,16 @@
 box-sizing:border-box;
 }
 body{
-    
+    background-image: url(back.jpg);
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat;
+    background-size:contain;
 }
 
 .row{
@@ -12,10 +21,9 @@ body{
 }
 .column{
     display: flex;
-        flex: 25%;
-   
-    background-color:#993333;
-    border-right: 1px solid  rgb(185,122,87);
+    flex: 25%;    
+    background: inherit;
+    border-right: 1px solid  rgb(127,127,127);
     height: 100%;
 justify-content: center;
 }    
@@ -29,10 +37,10 @@ justify-content: center;
       
 }
 .row a:hover{
-      background-color:rgb(221,190,74);
+    
     color: black;
 	width:100%;
-   
+   opacity: 5px;
    
   
 }
